@@ -42,6 +42,8 @@ class TaskDetailActivity : AppCompatActivity() {
 
         setSupportActionBar(findViewById(R.id.toolbar))
 
+        getSupportActionBar()?.setDisplayShowTitleEnabled(false)
+
         // recuperar task
         task = intent.getSerializableExtra(TASK_DETAIL_EXTRA) as Task?
 
